@@ -1,0 +1,16 @@
+PODS:
+  - LLGobang (1.0.0)
+
+DEPENDENCIES:
+  - LLGobang (from `.`)
+
+EXTERNAL SOURCES:
+  LLGobang:
+    :path: .
+
+SPEC CHECKSUMS:
+  LLGobang: 4ed841ec538608e663b58f113d6029fa8beac1d5
+
+PODFILE CHECKSUM: 58fd8856f3ce4ff40f6cf869c89087c76aa1b545
+
+COCOAPODS: 1.3.0.beta.2
