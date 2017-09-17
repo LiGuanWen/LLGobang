@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLGBGameBeginViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gobangmodebg" translatesAutoresizingMaskIntoConstraints="NO" id="5kX-mR-4pj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wuziqiwenzi" translatesAutoresizingMaskIntoConstraints="NO" id="ejN-fU-QZT">
+                    <rect key="frame" x="0.0" y="0.0" width="87" height="206"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0D-DX-yDX">
+                    <rect key="frame" x="128" y="196" width="133" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="人机对战"/>
+                    <connections>
+                        <action selector="HumanVSComputerAction:" destination="-1" eventType="touchUpInside" id="XtB-17-RdX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgt-tN-eWW">
+                    <rect key="frame" x="128" y="269" width="133" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="同屏对战"/>
+                    <connections>
+                        <action selector="humanVSHumanBySameScreenAction:" destination="-1" eventType="touchUpInside" id="fFD-un-Hmk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcH-uo-QJP">
+                    <rect key="frame" x="128" y="338" width="133" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="蓝牙对战"/>
+                    <connections>
+                        <action selector="humanVSHumanByBluetoothAction:" destination="-1" eventType="touchUpInside" id="WEs-CT-ZDx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrY-tJ-cg8">
+                    <rect key="frame" x="128" y="409" width="133" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="游戏介绍"/>
+                    <connections>
+                        <action selector="gameIntroduceAction:" destination="-1" eventType="touchUpInside" id="74z-xY-hKm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZC-qA-1cl">
+                    <rect key="frame" x="128" y="476" width="133" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="游戏设置"/>
+                    <connections>
+                        <action selector="gameSetting:" destination="-1" eventType="touchUpInside" id="3GK-mf-Dxh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5kX-mR-4pj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4FX-oG-UYz"/>
+                <constraint firstAttribute="bottom" secondItem="5kX-mR-4pj" secondAttribute="bottom" id="IBC-7N-Xyl"/>
+                <constraint firstAttribute="trailing" secondItem="5kX-mR-4pj" secondAttribute="trailing" id="RE6-bJ-hCq"/>
+                <constraint firstItem="5kX-mR-4pj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xye-gY-Oz5"/>
+                <constraint firstItem="ejN-fU-QZT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eOj-XR-ilF"/>
+                <constraint firstItem="ejN-fU-QZT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hLB-1f-oXD"/>
+            </constraints>
+            <point key="canvasLocation" x="-36.5" y="-18.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gobangmodebg" width="326" height="452"/>
+        <image name="wuziqiwenzi" width="87" height="206"/>
+    </resources>
+</document>

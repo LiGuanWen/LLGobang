@@ -341,9 +341,25 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LLGobang/Pods-LLGobang-resources.sh",
+				"${PODS_ROOT}/../LLGobangClass/LLGBGameBegin/Controller/LLGBGameBeginViewController.xib",
+				"${PODS_ROOT}/../LLGobangClass/LLGBGameIntroduce/Controller/LLGBGameIntroduceViewController.xib",
+				"${PODS_ROOT}/../LLGobangClass/LLGBGameSetting/Controller/LLGBGameSettingViewController.xib",
+				"${PODS_ROOT}/../LLGobangClass/LLGBHumanVSComputer/Controller/LLGBHumanVSComputerViewController.xib",
+				"${PODS_ROOT}/../LLGobangClass/LLGBHumanVSHumanByBluetooth/Controller/LLGBHumanVSHumanByBluetoothViewController.xib",
+				"${PODS_ROOT}/../LLGobangClass/LLGBHumanVSHumanBySameScreen/Controller/LLGBHumanVSHumanBySameScreenViewController.xib",
+				"${PODS_ROOT}/../LLGobangClass/LLGobangResource.bundle",
+				"${PODS_ROOT}/../LLGobangClass/LLGobangAsset.xcassets",
+				"${PODS_ROOT}/LLKit/LLKitClass/HorizontalSelector/HorizontalSelector.xib",
+				"${PODS_ROOT}/LLKit/LLKitClass/HorizontalSelector/HorizontalSelectorCell.xib",
+				"${PODS_ROOT}/LLKit/LLKitClass/LLEvaluationStar/emptyStar.png",
+				"${PODS_ROOT}/LLKit/LLKitClass/LLEvaluationStar/Star.png",
+				"${PODS_ROOT}/LLKit/LLKitClass/LLWeb/WebViewJavascriptBridge/WebViewJavascriptBridge.js.txt",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
